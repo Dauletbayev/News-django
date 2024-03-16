@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -58,7 +59,7 @@
                     <div class="collapse navbar-collapse" id="navbarCollapse">
                         <ul class="navbar-nav mr-auto">
                             <li class="nav-item">
-                                <a class="nav-link" href="tech-index.html">Home</a>
+                                <a class="nav-link" href="{% url 'tech_index' %}">Home</a>
                             </li>
                             <li class="nav-item dropdown has-submenu menu-large hidden-md-down hidden-sm-down hidden-xs-down">
                                 <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">News</a>
@@ -417,16 +418,16 @@
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="tech-category-01.html">Gadgets</a>
+                                <a class="nav-link" href="{% url 'tech_category_01' %}">Gadgets</a>
                             </li>                   
                             <li class="nav-item">
-                                <a class="nav-link" href="tech-category-02.html">Videos</a>
+                                <a class="nav-link" href="{% url 'tech_category_02' %}">Videos</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="tech-category-03.html">Reviews</a>
+                                <a class="nav-link" href="{% url 'tech_category_03' %}">Reviews</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="tech-contact.html">Contact Us</a>
+                                <a class="nav-link" href="{% url 'tech_contact' %}">Contact Us</a>
                             </li>
                         </ul>
                         <ul class="navbar-nav mr-2">
@@ -444,7 +445,7 @@
                 </nav>
             </div><!-- end container-fluid -->
         </header><!-- end market-header -->
-
+    {% for main in  %}
         <section class="section first-section">
             <div class="container-fluid">
                 <div class="masonry-blog clearfix">
