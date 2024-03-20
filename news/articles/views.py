@@ -33,7 +33,7 @@ def tech_single(request):
     categories = CategoryModel.objects.all()
     articles = ArticleModel.objects.all()
     context = {'categories': categories, 'articles': articles}
-    return render(request, template_name='tech_author.html', context=context)
+    return render(request, template_name='tech_single.html', context=context)
 
 def tech_contact(request):
     categories = CategoryModel.objects.all()
